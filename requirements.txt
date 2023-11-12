@@ -1,7 +1,7 @@
 asgiref
 defusedxml
 diff-match-patch
-Django
+Django==4.2.7
 django-import-export
 django-pyodbc-azure
 et-xmlfile
