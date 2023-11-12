@@ -24,7 +24,7 @@ DEBUG = False
 
 DATABASES = {
     "default": {
-        "ENGINE": "mssql",
+        "ENGINE": "sql_server.pyodbc",
         'NAME': os.getenv('AZURE_SQL_DATABASE'),
         'USER': os.getenv('AZURE_SQL_USER'),
         'PASSWORD': os.getenv('AZURE_SQL_PASSWORD'),

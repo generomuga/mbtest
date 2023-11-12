@@ -75,7 +75,7 @@ WSGI_APPLICATION = 'mbtest.wsgi.application'
 
 DATABASES = {
     "default": {
-        "ENGINE": "mssql",
+        "ENGINE": "sql_server.pyodbc",
         "NAME": "testdb",
         "HOST": "localhost",
         "PORT": "1433",
