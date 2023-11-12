@@ -25,11 +25,11 @@ DEBUG = False
 DATABASES = {
     "default": {
         "ENGINE": "sql_server.pyodbc",
-        'NAME': os.getenv('AZURE_SQL_DATABASE'),
-        'USER': os.getenv('AZURE_SQL_USER'),
-        'PASSWORD': os.getenv('AZURE_SQL_PASSWORD'),
-        'HOST': os.getenv('AZURE_SQL_SERVER'),
-        'PORT': os.getenv('AZURE_SQL_PORT'),  
+        "NAME": os.getenv('AZURE_SQL_DATABASE'),
+        "USER": os.getenv('AZURE_SQL_USER'),
+        "PASSWORD": os.getenv('AZURE_SQL_PASSWORD'),
+        "HOST": os.getenv('AZURE_SQL_SERVER'),
+        "PORT": os.getenv('AZURE_SQL_PORT'), 
     },
 },
 
