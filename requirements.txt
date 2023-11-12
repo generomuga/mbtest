@@ -1,9 +1,9 @@
 asgiref==3.7.2
 defusedxml==0.7.1
 diff-match-patch==20230430
-Django==4.2.6
-django-import-export==3.3.1
-django-pyodbc-azure==2.1.0.0
+Django
+django-import-export
+django-pyodbc-azure
 et-xmlfile==1.1.0
 MarkupPy==1.14
 mssql-django==1.3
