@@ -24,7 +24,7 @@ DEBUG = False
 
 DATABASES = {
     "default": {
-        "ENGINE": "sql_server.pyodbc",
+        "ENGINE": "django.db.backends.mssql",
         "NAME": os.getenv('AZURE_SQL_DATABASE'),
         "USER": os.getenv('AZURE_SQL_USER'),
         "PASSWORD": os.getenv('AZURE_SQL_PASSWORD'),
