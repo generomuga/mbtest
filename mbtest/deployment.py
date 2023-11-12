@@ -2,7 +2,7 @@ import os
 from .settings import *
 from .settings import BASE_DIR
 
-ALLOWED_HOSTS = [os.environ['WEBSITE_HOSTNAME']]
+ALLOWED_HOSTS = [os.environ['WEBSITE_HOSTNAME'],'http://devmb.azurewebsites.net/admin','https://devmb.azurewebsites.net/admin']
 CSRF_TRUSTED_ORIGINS = ['https://'+os.environ['WEBSITE_HOSTNAME']]
 DEBUG = False
 
@@ -24,12 +24,15 @@ DEBUG = False
 
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.mssql",
+        "ENGINE": "sql_server.pyodbc",
         "NAME": os.getenv('AZURE_SQL_DATABASE'),
         "USER": os.getenv('AZURE_SQL_USER'),
         "PASSWORD": os.getenv('AZURE_SQL_PASSWORD'),
         "HOST": os.getenv('AZURE_SQL_SERVER'),
-        "PORT": os.getenv('AZURE_SQL_PORT'), 
+        "PORT": os.getenv('AZURE_SQL_PORT'),
+        'OPTIONS': {
+            'driver': 'ODBC Driver 17 for SQL Server',
+        },
     },
 },
 
